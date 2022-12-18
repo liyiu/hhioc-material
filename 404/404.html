@@ -1,155 +1,36 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
- 
-<!-- viewport meta to reset iPhone inital scale -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-<title>Demo: Responsive Design in 3 Steps</title>
- 
-<!-- css3-mediaqueries.js for IE8 or older -->
-<!--[if lt IE 9]>
-	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-<![endif]-->
- 
-<style type="text/css">
- 
-body {
-	font: 1em/150% Arial, Helvetica, sans-serif;
-}
-a {
-	color: #669;
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: underline;
-}
-h1 {
-	font: bold 36px/100% Arial, Helvetica, sans-serif;
-}
- 
-/************************************************************************************
-STRUCTURE
-*************************************************************************************/
-#pagewrap {
-	padding: 5px;
-	width: 960px;
-	margin: 20px auto;
-}
-#header {
-	height: 180px;
-}
-#content {
-	width: 600px;
-	float: left;
-}
-#sidebar {
-	width: 300px;
-	float: right;
-}
-#footer {
-	clear: both;
-}
- 
-/************************************************************************************
-MEDIA QUERIES
-*************************************************************************************/
-/* for 980px or less */
-@media screen and (max-width: 980px) {
-	
-	#pagewrap {
-		width: 94%;
-	}
-	#content {
-		width: 65%;
-	}
-	#sidebar {
-		width: 30%;
-	}
- 
-}
- 
-/* for 700px or less */
-@media screen and (max-width: 700px) {
- 
-	#content {
-		width: auto;
-		float: none;
-	}
-	#sidebar {
-		width: auto;
-		float: none;
-	}
- 
-}
- 
-/* for 480px or less */
-@media screen and (max-width: 480px) {
- 
-	#header {
-		height: auto;
-	}
-	h1 {
-		font-size: 24px;
-	}
-	#sidebar {
-		display: none;
-	}
- 
-}
- 
-/* border & guideline (you can ignore these) */
-#content {
-	background: #f8f8f8;
-}
-#sidebar {
-	background: #f0efef;
-}
-#header, #content, #sidebar {
-	margin-bottom: 5px;
-}
-#pagewrap, #header, #content, #sidebar, #footer {
-	border: solid 1px #ccc;
-}
- 
-</style>
-</head>
- 
-<body>
- 
-<div id="pagewrap">
- 
-	<div id="header">
-		<h1>Header</h1>
-		<p>Tutorial by <a href="http://webdesignerwall.com">Web Designer Wall</a> (read <a href="http://webdesignerwall.com/tutorials/responsive-design-in-3-steps">related article</a>)</p>
-	</div>
- 
-	<div id="content">
-		<h2>Content</h2>
-		<p>text</p>
-		<p>text</p>
-		<p>text</p>
-		<p>text</p>
-		<p>text</p>
-		<p>text</p>
-		<p>text</p>
-		<p>text</p>
-		<p>text</p>
-		<p>text</p>
-	</div>
- 
-	<div id="sidebar">
-		<h3>Sidebar</h3>
-		<p>text</p>
-		<p>text</p>
-	</div>
-	
-	<div id="footer">
-		<h4>Footer</h4>
-	</div>
- 
-</div>
- 
-</body>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>404</title>
+		<meta name="renderer" content="webkit" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+		<!--[if lte IE 8]> <script> location = "/ie.html?url=" + encodeURIComponent(location.href); </script> <![endif]-->
+		<style>
+			*{ padding:0; margin:0; box-sizing: border-box;font-family: "微软雅黑"; }
+			body,html{ width:100%; height:100%; }
+			img{ -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+			.container{ max-width:90%; margin:0 auto; padding:80px 0px; }
+			.bg{ display:block; max-width:100%; margin:0px auto; }
+			.btn{ width:400px; margin:0 auto; max-width:100%; margin-top:40px; }
+			.btn a{ float:left; text-decoration: none; width:46.5%; border:1px solid #5298ff; background:#5298ff; color:#FFF; display:block; height:46px; line-height:44px; text-align:center; font-size:16px; border-radius:3px; overflow: hidden; }
+			.btn .goindex{ margin-right:7%; }
+			.btn .lx{ border: 1px solid #d8d8d8; background: #ffffff; color: #8c8c8c; }
+			@media screen and (max-width: 500px) {
+				.btn{ width:85%; }
+				.btn a{ width:100%; font-size:15px; height:42px; line-height:42px; }
+				.btn .goindex{ margin-right:0; margin-bottom:20px; }
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<img src="img/403.png" class="bg" /> 
+			<div class="btn">
+				<a href="/" class="goindex">回到首页</a>
+				<a href="http://wpa.qq.com/msgrd?v=3&uin=2049085816&site=qq&menu=yes" target="_blank" class="lx">联系站长</a>
+				<div style="clear: both;"></div>
+			</div>
+		</div>
+	</body>
 </html>
